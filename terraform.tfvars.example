@@ -1,0 +1,23 @@
+# AWS Configuration
+aws_region = "us-east-1"
+aws_profile = "kai-labs"  # AWS SSO profile name
+
+# Project Configuration
+project_name = "opencti"
+environment  = "demo"
+
+# Network Configuration
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.10.0/24", "10.0.20.0/24"]
+
+# OpenCTI Configuration
+opencti_admin_email    = "admin@opencti.io"
+opencti_admin_password = "changeme"
+
+# Resource Configuration
+elastic_memory_size = "4g"
+instance_type      = "t3.medium"
+
+# Note: S3 access is handled via IAM roles attached to ECS tasks
+# No access keys needed - more secure!
